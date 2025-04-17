@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Signup{
+  background-color: azure;
+  border-radius: 0 15px 15px 0;
+}
+.Login,.Signup{
+  width: 50%;
+  padding: 10px;
+}
+.container{
+  display: flex;
+  max-width:700px;
+  width:90%;
+  background-color: bisque;
+  /* padding: 15px; */
+  font-family: roboto;
+  border-radius: 15px;
+  position: relative;
+}
+.Toggle{
+  width: 50%;
+  background-color:black;
+  position: absolute;
+  left:50%;
+  top: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:left 0.7s ease-in;
+  border-radius: 0 8px 8px 0;
+}
+.active{
+  border-radius: 8px 0 0 8px ;
+  left: 0;
+}
+.Toggle button{
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.Signup h2,.Login h2{
+  font-weight: 400;
+  text-align: center;
+  margin: 10px 0;
+}
+.Signup form,.Login form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+}
+.Password{
+  position: relative;
+}
+.name,.Email,.mail,.Password{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+.Login .forget{
+  display: flex;
+  gap: 10px;
+}
+.Email input,.name input,.mail input,.Password input{
+  width: 90%;
+  padding: 5px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  border-radius: 5px; 
+}
+.Password button{
+  background-color: inherit;
+  color: black;
+  width: 8%;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 33px;
+  right: 33px;
+}
+.Signup .sign,form .log{
+  border: none;
+  border-radius: 30px;
+  width: 30%;
+  padding: 10px;
+  margin: auto;
+  background-color: black;
+  color: white;
+}
+span{
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
